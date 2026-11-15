@@ -1,7 +1,8 @@
 ================================================================================
                     GIT COMMANDS DOCUMENTATION - ASSIGNMENT 1
 ================================================================================
-Student Name : Nandu Dasari
+Student Name : D.N.Nanda kishore
+Roll Number  : 2024eb02261
 GitHub User  : nandakishore-dasari
 Repository   : https://github.com/nandakishore-dasari/software-devolpment-practise
 ================================================================================
