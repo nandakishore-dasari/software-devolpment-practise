@@ -1,0 +1,93 @@
+================================================================================
+                    GIT COMMANDS DOCUMENTATION - ASSIGNMENT 1
+================================================================================
+Student Name : Nandu Dasari
+GitHub User  : nandakishore-dasari
+Repository   : https://github.com/nandakishore-dasari/software-devolpment-practise
+================================================================================
+
+1. git init -b main
+   Initializes a new local Git repository in the project folder and designates
+   'main' as the default branch.
+
+2. git status
+   Displays the state of the working tree and staging area, identifying untracked,
+   modified, or staged files.
+
+3. git add index.html about.html
+   Stages the newly created index.html and about.html files to the index ready for
+   the initial commit.
+
+4. git commit -m "Initial commit: Add index.html and about.html"
+   Saves the initial snapshot of the repository to permanent version control history
+   with an informative commit message.
+
+5. git diff about.html
+   Shows the line-by-line additions and differences between the modified about.html
+   in the working directory and the previous commit.
+
+6. git add about.html
+   Stages the updated about.html containing the new skills section.
+
+7. git commit -m "Update about.html: Add skills section"
+   Records the second commit on the main branch capturing changes made to the
+   About page.
+
+8. git branch feature
+   Creates an isolated feature branch named 'feature' branching off the current
+   commit on main.
+
+9. git checkout feature
+   Switches the active working branch and HEAD pointer to the 'feature' branch.
+
+10. git branch
+    Lists all branches in the repository and marks the active branch with an asterisk (*).
+
+11. git add index.html
+    Stages index.html after adding a featured projects section on the feature branch.
+
+12. git commit -m "Add featured projects section to index.html"
+    Commits the featured projects section updates directly onto the feature branch.
+
+13. git checkout main
+    Switches the active branch back to 'main' in preparation for merging changes.
+
+14. git merge --no-ff feature -m "Merge branch 'feature' into main"
+    Merges the 'feature' branch into 'main' and creates a dedicated merge commit,
+    preserving the branching history graph.
+
+15. git log --graph --oneline --all
+    Displays a clear visual ASCII graph of all commits, showing branch creation,
+    divergence, and the merge point.
+
+16. git status --ignored
+    Displays the repository status including files matching .gitignore patterns
+    that are excluded from tracking.
+
+17. git add .gitignore
+    Stages the .gitignore file containing rules to ignore *.log files and the temp/ directory.
+
+18. git commit -m "Add .gitignore to exclude log files and temp directory"
+    Commits the .gitignore configuration file into version control.
+
+19. git reset --soft HEAD~1
+    Undoes the most recent commit while preserving all file modifications intact
+    and staged in the index.
+
+20. git restore --staged about.html
+    Unstages modifications from the staging index back to the unstaged working tree.
+
+21. git restore about.html
+    Discards unstaged modifications in the working directory, reverting the file
+    back to the clean committed state.
+
+22. git remote add origin https://github.com/nandakishore-dasari/software-devolpment-practise.git
+    Connects the local Git repository to the remote public GitHub repository named 'origin'.
+
+23. git push -u origin main
+    Pushes the local 'main' branch commits to GitHub and configures upstream tracking.
+
+24. git push origin feature
+    Pushes the 'feature' branch to GitHub so all branching history is fully inspectable online.
+
+================================================================================
